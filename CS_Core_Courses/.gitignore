@@ -1,0 +1,101 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Go module cache
+go.sum
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Profiling data
+*.prof
+*.pprof
+
+# Air live reload
+tmp/
+
+# Delve debugger
+dlv
+
+# Build directories
+/build
+/dist
+/bin
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+
+# Configuration files that might contain sensitive data
+config.local.yml
+config.local.yaml
+config.local.toml
+config.local.json
+
+# Project-specific files
+# Tutorial output files
+tutorial_output/
+examples_output/
+
+# Temporary testing files
+*.tmp
+*_test_output
+
+# Go module downloaded dependencies (keep go.sum for version control)
+# If you want to exclude all module cache, uncomment the line below
+# go.sum
+
+# Documentation build artifacts
+docs/_build/
+docs/site/
+
+# Performance benchmark results
+benchmark_results/
+
+# Network capture files (for networking modules)
+*.pcap
+*.cap
+
+# Memory dumps and core files
+*.core
+*.dump
+
+# Debug symbols
+*.debug
+
+# Coverage reports
+coverage.html
+coverage.out
