@@ -86,15 +86,29 @@
 
 ## 学习计划文件索引
 
+> 文件名中的数字表示推荐学习顺序
+
+### 数学一（按学习顺序）
+
+| 顺序 | 文件 | 内容 |
+|------|------|------|
+| 1 | [math-01-calculus-plan.md](math-01-calculus-plan.md) | 高等数学（先学，基础） |
+| 2 | [math-02-linear-algebra-plan.md](math-02-linear-algebra-plan.md) | 线性代数（次之） |
+| 3 | [math-03-probability-plan.md](math-03-probability-plan.md) | 概率论（需要高数+线代基础） |
+
+### 408统考（按学习顺序）
+
+| 顺序 | 文件 | 内容 |
+|------|------|------|
+| 1 | [cs408-01-data-structure-plan.md](cs408-01-data-structure-plan.md) | 数据结构（先学，编程基础） |
+| 2 | [cs408-02-computer-organization-plan.md](cs408-02-computer-organization-plan.md) | 计算机组成原理（硬件基础） |
+| 3 | [cs408-03-operating-system-plan.md](cs408-03-operating-system-plan.md) | 操作系统（需要组原基础） |
+| 4 | [cs408-04-computer-network-plan.md](cs408-04-computer-network-plan.md) | 计算机网络（相对独立） |
+
+### 其他科目
+
 | 文件 | 内容 |
 |------|------|
-| [math-calculus-plan.md](math-calculus-plan.md) | 高等数学学习计划 |
-| [math-linear-algebra-plan.md](math-linear-algebra-plan.md) | 线性代数学习计划 |
-| [math-probability-plan.md](math-probability-plan.md) | 概率论与数理统计学习计划 |
-| [cs408-data-structure-plan.md](cs408-data-structure-plan.md) | 数据结构学习计划 |
-| [cs408-operating-system-plan.md](cs408-operating-system-plan.md) | 操作系统学习计划 |
-| [cs408-computer-organization-plan.md](cs408-computer-organization-plan.md) | 计算机组成原理学习计划 |
-| [cs408-computer-network-plan.md](cs408-computer-network-plan.md) | 计算机网络学习计划 |
 | [english-plan.md](english-plan.md) | 英语一学习计划 |
 | [politics-plan.md](politics-plan.md) | 政治学习计划 |
 
