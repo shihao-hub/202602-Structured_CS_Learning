@@ -110,9 +110,9 @@ func (st *SegmentTable) Print() {
 // SegmentPageSystem 段页式存储管理系统
 // 408考点：段页式结合，先分段再分页
 type SegmentPageSystem struct {
-	SegmentTable      *SegmentTable           // 段表
-	PageTablesPerSeg  map[int]*PageTable      // 每个段的页表 [段号]->页表
-	PageSize          int                     // 页面大小
+	SegmentTable     *SegmentTable      // 段表
+	PageTablesPerSeg map[int]*PageTable // 每个段的页表 [段号]->页表
+	PageSize         int                // 页面大小
 }
 
 // NewSegmentPageSystem 创建段页式系统
@@ -241,9 +241,9 @@ func SegmentationExample() {
 	fmt.Printf("系统配置: 页面大小 = %d 字节\n\n", pageSize)
 
 	// 添加段（自动分页）
-	sps.AddSegmentWithPages(0, "代码段", 5000)  // 需要5页
-	sps.AddSegmentWithPages(1, "数据段", 3000)  // 需要3页
-	sps.AddSegmentWithPages(2, "栈段", 2000)   // 需要2页
+	sps.AddSegmentWithPages(0, "代码段", 5000) // 需要5页
+	sps.AddSegmentWithPages(1, "数据段", 3000) // 需要3页
+	sps.AddSegmentWithPages(2, "栈段", 2000)  // 需要2页
 
 	// 为各段的页建立映射（模拟加载到物理内存）
 	// 代码段：页0->帧10, 页1->帧11, 页2->帧12, 页3->帧13, 页4->帧14

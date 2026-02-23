@@ -7,13 +7,13 @@ import (
 // PagingSystem 分页系统（扩展版）
 // 408考点：分页存储管理的核心概念
 type PagingSystem struct {
-	PageSize      int            // 页面大小（字节）
-	FrameSize     int            // 帧大小（与页面大小相同）
-	NumPages      int            // 逻辑地址空间页数
-	NumFrames     int            // 物理内存帧数
-	PageTable     *PageTable     // 页表
-	MemoryFrames  []bool         // 物理内存帧占用情况（true表示已占用）
-	PageFaults    int            // 缺页次数
+	PageSize     int        // 页面大小（字节）
+	FrameSize    int        // 帧大小（与页面大小相同）
+	NumPages     int        // 逻辑地址空间页数
+	NumFrames    int        // 物理内存帧数
+	PageTable    *PageTable // 页表
+	MemoryFrames []bool     // 物理内存帧占用情况（true表示已占用）
+	PageFaults   int        // 缺页次数
 }
 
 // NewPagingSystem 创建分页系统
@@ -109,12 +109,12 @@ func (ps *PagingSystem) TranslateAddressDetailed(logicalAddr int) {
 // MultiLevelPageTable 多级页表（二级页表示例）
 // 408考点：多级页表的组织和地址转换
 type MultiLevelPageTable struct {
-	PageSize         int       // 页面大小
-	Level1Size       int       // 一级页表大小（页目录表项数）
-	Level2Size       int       // 二级页表大小（每个二级页表的表项数）
-	PageDirectory    []int     // 页目录（存储二级页表的基址）
-	SecondLevelTables [][]int   // 二级页表数组
-	FrameAllocated   map[int]int // 已分配的帧映射 [页号]->帧号
+	PageSize          int         // 页面大小
+	Level1Size        int         // 一级页表大小（页目录表项数）
+	Level2Size        int         // 二级页表大小（每个二级页表的表项数）
+	PageDirectory     []int       // 页目录（存储二级页表的基址）
+	SecondLevelTables [][]int     // 二级页表数组
+	FrameAllocated    map[int]int // 已分配的帧映射 [页号]->帧号
 }
 
 // NewMultiLevelPageTable 创建二级页表
@@ -340,11 +340,10 @@ func PagingExample() {
 
 	// 计算
 	logicalAddrBits := 32
-	pageSizeBytes := 4096
 	pteSize := 4
 
 	totalPages := 1 << (logicalAddrBits - 12) // 2^(32-12) = 2^20
-	pageTableSize := totalPages * pteSize      // 页表大小
+	pageTableSize := totalPages * pteSize     // 页表大小
 
 	fmt.Println("解答:")
 	fmt.Printf("(1) 页面大小4KB = 2^12字节，页内偏移需要12位\n")

@@ -6,14 +6,14 @@ import (
 
 // BankerSystem 银行家算法系统
 type BankerSystem struct {
-	NumProcesses int       // 进程数量
-	NumResources int       // 资源类型数量
-	Max          [][]int   // 最大需求矩阵 [进程][资源类型]
-	Allocation   [][]int   // 已分配矩阵
-	Need         [][]int   // 需求矩阵 (Max - Allocation)
-	Available    []int     // 可用资源向量
-	Finish       []bool    // 进程是否完成
-	SafeSequence []int     // 安全序列
+	NumProcesses int     // 进程数量
+	NumResources int     // 资源类型数量
+	Max          [][]int // 最大需求矩阵 [进程][资源类型]
+	Allocation   [][]int // 已分配矩阵
+	Need         [][]int // 需求矩阵 (Max - Allocation)
+	Available    []int   // 可用资源向量
+	Finish       []bool  // 进程是否完成
+	SafeSequence []int   // 安全序列
 }
 
 // NewBankerSystem 创建银行家算法系统
@@ -215,11 +215,11 @@ func formatProcessSequence(seq []int) string {
 // 408考点：使用资源分配图检测死锁
 // 简化版：检查是否存在循环等待
 type DeadlockDetection struct {
-	NumProcesses int      // 进程数量
-	NumResources int      // 资源数量
-	Allocation   [][]int  // 已分配矩阵
-	Request      [][]int  // 请求矩阵
-	Available    []int    // 可用资源
+	NumProcesses int     // 进程数量
+	NumResources int     // 资源数量
+	Allocation   [][]int // 已分配矩阵
+	Request      [][]int // 请求矩阵
+	Available    []int   // 可用资源
 }
 
 // NewDeadlockDetection 创建死锁检测系统

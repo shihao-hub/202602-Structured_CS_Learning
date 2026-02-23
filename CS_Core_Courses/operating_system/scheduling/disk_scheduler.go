@@ -13,10 +13,10 @@ type DiskRequest struct {
 
 // DiskScheduler 磁盘调度器
 type DiskScheduler struct {
-	CurrentHead int            // 当前磁头位置
-	DiskSize    int            // 磁盘大小（磁道数）
-	Requests    []DiskRequest  // 请求队列
-	Direction   int            // 磁头移动方向 (1: 向外, -1: 向内)
+	CurrentHead int           // 当前磁头位置
+	DiskSize    int           // 磁盘大小（磁道数）
+	Requests    []DiskRequest // 请求队列
+	Direction   int           // 磁头移动方向 (1: 向外, -1: 向内)
 }
 
 // DiskScheduleResult 磁盘调度结果
@@ -111,8 +111,8 @@ func (ds *DiskScheduler) SCAN() *DiskScheduleResult {
 	}
 
 	// 分组：当前位置以内和以外的请求
-	inner := make([]int, 0)  // 内侧请求（小于当前位置）
-	outer := make([]int, 0)  // 外侧请求（大于等于当前位置）
+	inner := make([]int, 0) // 内侧请求（小于当前位置）
+	outer := make([]int, 0) // 外侧请求（大于等于当前位置）
 
 	for _, req := range ds.Requests {
 		if req.Track < ds.CurrentHead {
