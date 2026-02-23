@@ -74,6 +74,7 @@ Structured_CS_Learning/
 │   └── politics-plan.md         # 政治计划
 │
 ├── GETTING_STARTED.md            # 新手入门指南
+├── CLAUDE.md                     # Claude Code 项目指南
 └── README.md                     # 本文件
 ```
 
