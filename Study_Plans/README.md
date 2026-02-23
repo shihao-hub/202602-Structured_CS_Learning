@@ -105,6 +105,13 @@
 | 3 | [cs408-03-operating-system-plan.md](cs408-03-operating-system-plan.md) | 操作系统（需要组原基础） |
 | 4 | [cs408-04-computer-network-plan.md](cs408-04-computer-network-plan.md) | 计算机网络（相对独立） |
 
+### 408方法论
+
+| 文件 | 内容 |
+|------|------|
+| [cs408-study-methodology.md](cs408-study-methodology.md) | 408学习方法（三阶段法） |
+| [cs408-wrong-answer-methodology.md](cs408-wrong-answer-methodology.md) | 错题处理方法（五类错因+三级标记） |
+
 ### 其他科目
 
 | 文件 | 内容 |
