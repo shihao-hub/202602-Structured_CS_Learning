@@ -4,12 +4,10 @@
 
 ## 📌 这个项目是什么？
 
-这是一个**计算机科学核心知识的实践学习项目**，通过代码实现帮助你深入理解：
-- 数据结构与算法
-- 操作系统原理
-- 计算机组成原理
-- 计算机网络
-- 数学基础（微积分、线性代数、概率论）
+这是一个**面向考研的计算机科学实践学习项目**，通过代码实现帮助你深入理解：
+- **408统考**: 数据结构与算法、操作系统、计算机组成原理、计算机网络
+- **数学一**: 高等数学、线性代数、概率论（基础+进阶）
+- **英语一**: 词汇学习方法、阅读理解策略
 
 **特点**：不只是看理论，而是通过**可运行的代码**来理解每个概念。
 
@@ -20,25 +18,45 @@
 ```
 Structured_CS_Learning/
 │
-├── CS_Core_Courses/           # 计算机核心课程（Go语言实现）
-│   ├── data_structures/       # 数据结构
-│   │   ├── basic/            # 基础：数组、链表、栈、队列、哈希表
-│   │   ├── tree/             # 树：二叉搜索树、堆
-│   │   └── graph/            # 图：遍历、最短路径、拓扑排序
-│   ├── operating_system/      # 操作系统
-│   │   ├── process/          # 进程管理与调度算法
-│   │   ├── memory/           # 内存管理
-│   │   └── synchronization/  # 进程同步（信号量、互斥锁）
-│   ├── computer_architecture/ # 计算机组成原理
-│   │   └── cpu/              # CPU设计：寄存器、ALU
-│   └── computer_networks/     # 计算机网络
-│       ├── application/      # 应用层：HTTP协议
-│       └── transport/        # 传输层：TCP协议
+├── CS_Core_Courses/              # 408统考（Go语言实现）
+│   ├── data_structures/          # 数据结构
+│   │   ├── basic/               # 基础：数组、链表、栈、队列、哈希表
+│   │   ├── linear/              # 进阶：串、稀疏矩阵
+│   │   ├── tree/                # 树：二叉搜索树、堆
+│   │   ├── graph/               # 图：遍历、最短路径、拓扑排序
+│   │   └── algorithm/           # 算法：排序、查找、DP、贪心、回溯、KMP
+│   ├── operating_system/         # 操作系统
+│   │   ├── process/             # 进程管理与调度算法
+│   │   ├── memory/              # 内存管理（分页、分段）
+│   │   ├── synchronization/     # 进程同步（信号量、互斥锁）
+│   │   ├── filesystem/          # 文件系统（inode、目录、分配方式）
+│   │   └── scheduling/          # 磁盘调度与死锁处理
+│   ├── computer_architecture/    # 计算机组成原理
+│   │   ├── cpu/                 # CPU：寄存器、ALU
+│   │   ├── memory/              # 存储器：Cache、虚拟内存
+│   │   ├── instruction_set/     # 指令系统
+│   │   ├── pipeline/            # 流水线
+│   │   └── bus/                 # 总线（理论）
+│   └── computer_networks/        # 计算机网络
+│       ├── application/         # 应用层：HTTP
+│       ├── transport/           # 传输层：TCP
+│       ├── network/             # 网络层：IP、路由、ARP
+│       ├── datalink/            # 数据链路层
+│       ├── physical/            # 物理层（理论）
+│       └── protocols/           # 协议：DNS
 │
-└── Math_Foundations/          # 数学基础（Python实现）
-    ├── calculus/             # 高等数学
-    ├── linear_algebra/       # 线性代数
-    └── probability/          # 概率论与数理统计
+├── Math_Foundations/              # 数学一（Python实现）
+│   ├── calculus/                 # 高等数学基础
+│   ├── linear_algebra/           # 线性代数基础
+│   ├── probability/              # 概率论基础
+│   ├── calculus_advanced/        # 高数进阶：曲线曲面积分、场论
+│   ├── linear_algebra_advanced/  # 线代进阶：二次型、向量空间
+│   └── probability_advanced/     # 概率进阶：数理统计、回归
+│
+└── English_Learning/             # 英语一
+    ├── vocabulary/              # 词汇学习方法与工具
+    ├── reading/                 # 阅读理解策略
+    └── docs/                    # 考试分析
 ```
 
 ---
@@ -261,6 +279,32 @@ python main.py --probability     # 概率论
 
 ---
 
-**Happy Learning! 🚀**
+## 考研专项学习路线
+
+### 408统考路线
+```
+阶段一: 数据结构基础 → 树与图 → 排序查找算法 → KMP
+阶段二: 操作系统(进程→内存→文件→死锁) → 组成原理(CPU→Cache→指令→流水线)
+阶段三: 计算机网络(应用→传输→网络→链路) → 真题强化
+```
+
+### 数学一路线
+```
+阶段一: 高等数学基础 → 线性代数基础 → 概率论基础
+阶段二: 高数进阶(曲线曲面积分/场论) → 线代进阶(二次型/向量空间) → 概率进阶(数理统计)
+阶段三: 真题训练 → 模拟冲刺
+```
+
+### 英语一路线
+```
+持续: 每天背诵考研词汇(参考 English_Learning/vocabulary/)
+阶段一: 掌握阅读策略(reading_strategies_guide.md)
+阶段二: 练习六大题型(question_types_analysis.md)
+阶段三: 真题精做 → 作文模板
+```
+
+---
+
+**Happy Learning!**
 
 *如有问题，欢迎在项目中提出Issue。*
