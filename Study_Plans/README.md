@@ -101,6 +101,7 @@
 | 文件 | 内容 |
 |------|------|
 | [math-study-methodology.md](math-study-methodology.md) | 数学学习方法（小单元+立刻做题） |
+| [math-learning-roadmap.md](math-learning-roadmap.md) | 数学三科学习路线图（顺序+时间安排） |
 
 ### 408统考（按学习顺序）
 
