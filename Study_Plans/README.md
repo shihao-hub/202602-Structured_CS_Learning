@@ -96,6 +96,12 @@
 | 2 | [math-02-linear-algebra-plan.md](math-02-linear-algebra-plan.md) | 线性代数（次之） |
 | 3 | [math-03-probability-plan.md](math-03-probability-plan.md) | 概率论（需要高数+线代基础） |
 
+### 数学方法论
+
+| 文件 | 内容 |
+|------|------|
+| [math-study-methodology.md](math-study-methodology.md) | 数学学习方法（小单元+立刻做题） |
+
 ### 408统考（按学习顺序）
 
 | 顺序 | 文件 | 内容 |
