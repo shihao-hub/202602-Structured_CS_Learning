@@ -10,12 +10,12 @@ import (
 // EthernetFrame 以太网帧结构
 // 对应 408 考点: 以太网帧格式
 type EthernetFrame struct {
-	Preamble       string // 前导码 (7 字节) + 帧起始定界符 SFD (1 字节)
-	DestMAC        string // 目的 MAC 地址 (6 字节)
-	SourceMAC      string // 源 MAC 地址 (6 字节)
-	Type           uint16 // 类型字段 (2 字节): 0x0800=IPv4, 0x0806=ARP
-	Data           []byte // 数据字段 (46-1500 字节)
-	FCS            uint32 // 帧校验序列 (4 字节, CRC-32)
+	Preamble  string // 前导码 (7 字节) + 帧起始定界符 SFD (1 字节)
+	DestMAC   string // 目的 MAC 地址 (6 字节)
+	SourceMAC string // 源 MAC 地址 (6 字节)
+	Type      uint16 // 类型字段 (2 字节): 0x0800=IPv4, 0x0806=ARP
+	Data      []byte // 数据字段 (46-1500 字节)
+	FCS       uint32 // 帧校验序列 (4 字节, CRC-32)
 }
 
 // NewEthernetFrame 创建以太网帧
@@ -77,17 +77,17 @@ func getFrameTypeName(frameType uint16) string {
 // CSMACD CSMA/CD 协议模拟
 // 对应 408 考点: 载波侦听多路访问/冲突检测
 type CSMACD struct {
-	Channel      bool          // 信道状态: true=忙, false=空闲
-	Stations     []*Station    // 所有站点
-	CollisionLog []string      // 冲突日志
+	Channel      bool       // 信道状态: true=忙, false=空闲
+	Stations     []*Station // 所有站点
+	CollisionLog []string   // 冲突日志
 }
 
 // Station 站点
 type Station struct {
-	Name          string        // 站点名称
-	MAC           string        // MAC 地址
-	BackoffCount  int           // 退避次数
-	MaxRetries    int           // 最大重传次数
+	Name         string // 站点名称
+	MAC          string // MAC 地址
+	BackoffCount int    // 退避次数
+	MaxRetries   int    // 最大重传次数
 }
 
 // NewCSMACD 创建 CSMA/CD 模拟器
@@ -102,10 +102,10 @@ func NewCSMACD() *CSMACD {
 // AddStation 添加站点
 func (c *CSMACD) AddStation(name, mac string) {
 	c.Stations = append(c.Stations, &Station{
-		Name:       name,
-		MAC:        mac,
+		Name:         name,
+		MAC:          mac,
 		BackoffCount: 0,
-		MaxRetries: 16, // 以太网标准: 最多重传 16 次
+		MaxRetries:   16, // 以太网标准: 最多重传 16 次
 	})
 }
 

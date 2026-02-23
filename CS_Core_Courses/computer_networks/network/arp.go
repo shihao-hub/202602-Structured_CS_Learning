@@ -108,11 +108,11 @@ func (t *ARPTable) PrintTable() {
 // ARPMessage ARP 报文
 // 对应 408 考点: ARP 请求与应答
 type ARPMessage struct {
-	OpCode         string // 操作码: REQUEST 或 REPLY
-	SenderIP       string // 发送方 IP
-	SenderMAC      string // 发送方 MAC
-	TargetIP       string // 目标 IP
-	TargetMAC      string // 目标 MAC (请求时为全 0)
+	OpCode    string // 操作码: REQUEST 或 REPLY
+	SenderIP  string // 发送方 IP
+	SenderMAC string // 发送方 MAC
+	TargetIP  string // 目标 IP
+	TargetMAC string // 目标 MAC (请求时为全 0)
 }
 
 // NewARPRequest 创建 ARP 请求
@@ -153,10 +153,10 @@ func (m *ARPMessage) String() string {
 
 // Host 主机 (用于 ARP 模拟)
 type Host struct {
-	Name       string     // 主机名
-	IPAddress  string     // IP 地址
-	MACAddress string     // MAC 地址
-	ARPTable   *ARPTable  // ARP 表
+	Name       string    // 主机名
+	IPAddress  string    // IP 地址
+	MACAddress string    // MAC 地址
+	ARPTable   *ARPTable // ARP 表
 }
 
 // NewHost 创建主机

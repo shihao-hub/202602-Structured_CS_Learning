@@ -116,9 +116,9 @@ func (c *DNSCache) PrintCache() {
 
 // DNSServer DNS 服务器
 type DNSServer struct {
-	Name    string                                      // 服务器名称
-	Records map[string]map[DNSRecordType]*DNSRecord    // DNS 记录数据库
-	Parent  *DNSServer                                  // 父级服务器 (用于迭代查询)
+	Name    string                                  // 服务器名称
+	Records map[string]map[DNSRecordType]*DNSRecord // DNS 记录数据库
+	Parent  *DNSServer                              // 父级服务器 (用于迭代查询)
 }
 
 // NewDNSServer 创建 DNS 服务器

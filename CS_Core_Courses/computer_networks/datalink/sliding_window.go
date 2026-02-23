@@ -157,14 +157,14 @@ func (gbn *GoBackN) Timeout() {
 // SelectiveRepeat 选择重传协议
 // 对应 408 考点: SR 协议,发送窗口 = 接收窗口,窗口大小 <= 2^(n-1)
 type SelectiveRepeat struct {
-	WindowSize   int            // 窗口大小
-	SeqNumBits   int            // 序号位数
-	MaxSeqNum    int            // 最大序号
-	SendBase     int            // 发送窗口基序号
-	NextSeqNum   int            // 下一个待发送序号
-	RecvBase     int            // 接收窗口基序号
-	RecvBuffer   map[int]*Frame // 接收缓存 (序号 -> 帧)
-	ACKedFrames  map[int]bool   // 已确认的帧
+	WindowSize  int            // 窗口大小
+	SeqNumBits  int            // 序号位数
+	MaxSeqNum   int            // 最大序号
+	SendBase    int            // 发送窗口基序号
+	NextSeqNum  int            // 下一个待发送序号
+	RecvBase    int            // 接收窗口基序号
+	RecvBuffer  map[int]*Frame // 接收缓存 (序号 -> 帧)
+	ACKedFrames map[int]bool   // 已确认的帧
 }
 
 // NewSelectiveRepeat 创建 SR 协议

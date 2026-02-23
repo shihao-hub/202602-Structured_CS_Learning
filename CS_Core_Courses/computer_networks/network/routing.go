@@ -20,9 +20,9 @@ func (r *RoutingTable) String() string {
 
 // Node 网络节点
 type Node struct {
-	Name          string                    // 节点名称
-	RoutingTable  map[string]*RoutingTable  // 路由表 (目的地 -> 路由项)
-	Neighbors     map[string]float64        // 邻居节点及其链路代价
+	Name          string                        // 节点名称
+	RoutingTable  map[string]*RoutingTable      // 路由表 (目的地 -> 路由项)
+	Neighbors     map[string]float64            // 邻居节点及其链路代价
 	DistanceTable map[string]map[string]float64 // 距离表 (用于距离向量算法)
 }
 
@@ -154,7 +154,7 @@ func (dv *DistanceVectorRouting) Run(maxIterations int) int {
 // LinkStateRouting 链路状态路由算法 (类 OSPF - Dijkstra)
 // 对应 408 考点: 链路状态算法,最短路径优先
 type LinkStateRouting struct {
-	Nodes map[string]*Node           // 所有节点
+	Nodes map[string]*Node              // 所有节点
 	Graph map[string]map[string]float64 // 全局链路状态数据库
 }
 
@@ -185,9 +185,9 @@ func (ls *LinkStateRouting) Dijkstra(source string) {
 	node := ls.Nodes[source]
 
 	// 初始化
-	dist := make(map[string]float64)   // 最短距离
-	prev := make(map[string]string)    // 前驱节点
-	visited := make(map[string]bool)   // 已访问标记
+	dist := make(map[string]float64) // 最短距离
+	prev := make(map[string]string)  // 前驱节点
+	visited := make(map[string]bool) // 已访问标记
 
 	// 所有节点初始距离为无穷大
 	for name := range ls.Nodes {
