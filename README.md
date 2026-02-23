@@ -13,6 +13,8 @@
 | 数学一 | `Math_Foundations/` | Python | 基础 + 进阶 |
 | 408统考 | `CS_Core_Courses/` | Go | 基础 + 进阶 |
 | 英语一 | `English_Learning/` | Python + Markdown | 词汇 + 阅读 |
+| 政治 | `Study_Plans/` | Markdown | 学习计划 |
+| **学习计划** | `Study_Plans/` | Markdown | 各科备考规划 |
 
 ## 项目结构
 
@@ -59,6 +61,18 @@ Structured_CS_Learning/
 │   ├── reading/                 # 阅读理解策略
 │   └── docs/                    # 考试分析
 │
+├── Study_Plans/                  # 考研学习计划
+│   ├── README.md                # 总览与时间规划
+│   ├── math-calculus-plan.md    # 高等数学计划
+│   ├── math-linear-algebra-plan.md  # 线性代数计划
+│   ├── math-probability-plan.md # 概率论计划
+│   ├── cs408-data-structure-plan.md      # 数据结构计划
+│   ├── cs408-operating-system-plan.md    # 操作系统计划
+│   ├── cs408-computer-organization-plan.md  # 组成原理计划
+│   ├── cs408-computer-network-plan.md    # 计算机网络计划
+│   ├── english-plan.md          # 英语一计划
+│   └── politics-plan.md         # 政治计划
+│
 ├── GETTING_STARTED.md            # 新手入门指南
 └── README.md                     # 本文件
 ```
@@ -85,6 +99,13 @@ python main.py     # 交互式菜单
 ```bash
 cd English_Learning
 python main.py     # 词汇学习工具
+```
+
+### 学习计划
+```bash
+cd Study_Plans
+# 查看各科学习计划
+cat README.md      # 总览与时间规划
 ```
 
 ## 项目特色
