@@ -321,7 +321,7 @@ $$BA = \begin{bmatrix} 2 & 0 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 0 & -1 \\ 1 
 
 ## 相关资源
 
-- [3Blue1Brown - 线性代数的本质](https://www.bilibili.com/video/BV1ys411k7Y3/)（B站有中字，必看！）
+- [3Blue1Brown - 线性代数的本质](https://www.bilibili.com/video/BV1ib411t7YR/)（B站有中字，必看！）
 - 《3D 数学基础：图形与游戏开发》- Fletcher Dunn
 - 《游戏编程中数学物理公式》- Danny Kodicek
 - [数学学习路线图](math-learning-roadmap.md)

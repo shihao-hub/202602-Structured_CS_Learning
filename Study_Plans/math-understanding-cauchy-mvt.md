@@ -216,7 +216,7 @@ $$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$$
 
 ## 相关资源
 
-- [3Blue1Brown - 微积分的本质](https://www.bilibili.com/video/BV1GJ411x7h7/)（B站有中字）
+- [3Blue1Brown - 微积分的本质](https://www.bilibili.com/video/BV1ob411y7L9/)（B站有中字）
 - 《普林斯顿微积分读本》- Adrian Banner
 - Morris Kline《微积分：直观和数值方法》
 - [数学学习方法论](math-study-methodology.md)
